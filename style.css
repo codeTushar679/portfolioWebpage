@@ -1,0 +1,359 @@
+body {
+    background-color: #1B1833;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+
+/* navbar start  */
+
+.navbar {
+  background-color: #4F1787;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar h1 {
+  color: #EBEAFF;
+  margin-left: 100px;
+}
+
+.navbar a {
+  color: #EBEAFF;
+}
+
+.navbar a:hover {
+  color: #CDC1FF;
+}
+
+.navbar .links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-right: 80px;
+}
+
+/* navbar end  */
+
+
+/* typed animate start  */
+
+.typed {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+}
+
+.typing {
+  color: #EBEAFF;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.picture img {
+  height: 600px;
+}
+
+/* typed animate end  */
+
+
+
+/* about start  */
+
+.aboutSect {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.aboutMe h1 {
+  font-size: 60px
+}
+
+.aboutMe p {
+  font-size: 26px;
+}
+
+.aboutSect .aboutMe {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #EBEAFF;
+}
+
+.bg {
+  perspective: 1000px;
+}
+
+.cardbg {
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.6s;
+}
+
+.front img, .back {
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+
+.front img {
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  background-color: #7ED4AD;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7E60BF;
+  width: 250px;
+  height: 400px;
+  font-size: 23px;
+  transform: rotateY(180deg);
+  flex-direction: column;
+}
+
+.back p {
+  margin-bottom: 10px;
+  color: #FFF6E3;
+  font-size: 20px;
+}
+
+.back h4 {
+  margin-top: 20px;
+  color: #392467;
+  font-size: 27px;
+}
+
+.bg:hover .cardbg {
+  transform: rotateY(-180deg);
+}
+
+/* about end  */
+
+
+/* learned start  */
+
+.learning {
+  margin-bottom: 180px;
+}
+
+.learning h1 {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  color: #EBEAFF;
+  font-size: 40px;
+}
+
+.line {
+  display: flex;
+  background-color: #E8E2E2;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-right: 60px;
+}
+
+.logo1 img {
+  height: 80px;
+  width: 80px;
+}
+
+.logo1 img {
+  animation-name: logos;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes logos {
+  0%, 100% {
+    bottom: 4px;
+  }
+  50% {
+    bottom: 24px;
+  }
+}
+
+.logo2 img {
+  height: 80px;
+  width: 80px;
+}
+
+.logo2 img {
+  animation-name: logoz;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes logoz {
+  0%, 100% {
+    top: 4px;
+  }
+  50% {
+    top: 24px;
+  }
+}
+/* learned end  */
+
+
+/* Front-End and Graphic Design Projects start  */
+
+.frontEnd {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frontEnd h1 {
+  font-size: 40px;
+  color: #EBEAFF;
+  margin-bottom: 30px;
+}
+
+.webPage {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+}
+
+.webPage img {
+  height: 300px;
+  margin-bottom: 20px;
+} 
+
+.webPage img:hover {
+  box-shadow: 0 4px 8px 0 #7E1891, 0 6px 20px 0 #500073;
+}
+
+.webPageOther {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+
+.webPageOther img {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.webPageOther img:hover {
+  box-shadow: 0 4px 8px 0 #7E1891, 0 6px 20px 0 #500073;
+}
+
+.frontEnd a button {
+  background-color: #CDC1FF;
+  height: 40px;
+  width: 160px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 17px;
+  margin-top: 10px;
+} 
+
+.frontEnd a button:hover {
+  background-color: #A294F9;
+}
+
+.btnOther a button {
+  background-color: #CDC1FF;
+  height: 40px;
+  width: 170px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 17px;
+  margin-top: 10px;
+} 
+
+.btnOther a button:hover {
+  background-color: #A294F9;
+}
+
+/* Front-End and Graphic Design Projects end  */
+
+
+/* gratitude start  */
+
+.gratitude {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.gratitude h1 {
+  color: #CDC1FF;
+  font-size: 60px;
+}
+
+/* gratitude end */
+
+
+
+/* footer start  */
+
+.foot .foots {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #EBEAFF;
+  text-align: center;
+}
+
+.foot {
+  background-color: #4F1787;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foot .foots .icons {
+  color: #EBEAFF;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.foot .foots .icons i {
+  margin: 0 5px;
+}
+
+.foot .foots .icons i:hover {
+  color: #CDC1FF;
+}
+
+.foot .foots .desg h3 {
+  margin-top: 15px;
+}
+
+/* footer end  */
