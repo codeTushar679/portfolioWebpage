@@ -91,7 +91,7 @@ body {
 }
 
 .aboutSect .aboutMe {
-  padding: 80px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,3 +357,218 @@ body {
 }
 
 /* footer end  */
+
+
+/* Mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar .links {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar .links {
+    display: none;
+  }
+
+  .typed {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .typing {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .picture img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .aboutSect .aboutMe {
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+
+  .aboutMe h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .aboutMe p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .front img, .back {
+    width: 200px;
+    height: 300px;
+  }
+
+  .back p{
+    font-size: 18px;
+  }
+
+  .learning {
+    display: none;
+  }
+
+  .frontEnd h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .webPage {
+    display: flex;
+    flex-direction: column;
+  } 
+  
+  .webPageOther {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .webPage img, .webPageOther img {
+    height: 200px;
+  }
+
+  .frontEnd a button, .btnOther a button {
+    width: 140px;
+    font-size: 15px;
+  }
+
+  .gratitude h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .foot {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .foot .foots .icons {
+    font-size: 25px;
+  }
+}
+
+/* Tablet devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar .links {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .typed {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .typing {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .picture img {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .aboutSect {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .aboutMe h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .aboutMe p {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .front img, .back {
+    width: 220px;
+    height: 350px;
+  }
+
+  .learning h1 {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .line {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo1 img, .logo2 img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .frontEnd h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .webPage, .webPageOther {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .webPage img, .webPageOther img {
+    height: 250px;
+  }
+
+  .frontEnd a button, .btnOther a button {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .gratitude h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .foot {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .foot .foots .icons {
+    font-size: 28px;
+  }
+}
