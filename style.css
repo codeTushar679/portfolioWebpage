@@ -401,23 +401,24 @@ body {
   }
 
   .aboutSect .aboutMe {
-    padding: 0px;
+    /* padding: 0px; */
     margin-bottom: 50px;
   }
 
   .aboutMe h1 {
     font-size: 40px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .aboutMe p {
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .front img, .back {
     width: 200px;
     height: 300px;
+    margin-left: 80px;
   }
 
   .back p{
